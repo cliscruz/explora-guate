@@ -1,0 +1,366 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: century gothic;
+   
+}
+/* NAVBAR */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(8px);
+    z-index: 1000;
+    transition: background 0.3s, box-shadow 0.3s;
+    color: whitesmoke;
+  }
+  
+  nav.scrolled {
+    background: rgba(0, 0, 0, 0.85);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .nav-links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+  }
+  
+  .nav-links li {
+    margin: 0 20px;
+  }
+  
+  .nav-links a {
+    position: relative;
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    transition: width 0.3s;
+  }
+  
+  .nav-links a:hover::after {
+    width: 100%;
+  }
+  
+  .ctn {
+    padding: 8px 16px;
+    background-color: #701628;
+    border-radius: 30px;
+    color: white;
+    text-decoration: none;
+    transition: background 0.3s;
+  }
+  
+  .ctn:hover {
+    background-color: #941b33;
+  }
+  
+  /* HEADER */
+  header {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("GuatemalaFondo.jpg_075453.jpg");
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .header-content {
+    margin-bottom: 150px;
+    color: whitesmoke;
+    text-align: center;
+  }
+  
+  .header-content h2 {
+    font-size: 4vmin;
+  }
+  
+  .line {
+    width: 150px;
+    height: 4px;
+    background-color: brown;
+    margin: 10px auto;
+    border-radius: 5px;
+  }
+  
+  .header-content h1 {
+    font-size: 7vmin;
+    margin-bottom: 30px;
+  }
+  
+
+.header-content h2 {
+    font-size: 4vmin;
+}
+.line {
+    width: 150px;
+    height: 4px;
+    background-color: brown;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+.header-content h1 {
+    font-size: 7vmin;
+    margin-bottom: 30px;
+}
+.ctn {
+    padding: 8px 15px;
+    background: #701628;
+    border-radius: 30px;
+    color: whitesmoke;
+}
+.lugares{
+    text-align: center;
+    margin-top: 20px;
+}
+.title {
+    text-align: center;
+    font-size: 4vmin;
+    color-scheme: blue;
+}
+/* Para dar espacio entre el header y las imágenes */
+.image-links {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.image-card {
+    width: 300px;
+    text-align: center;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  .image-card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+  }
+  
+  .image-card img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.4s ease;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .image-card:hover img {
+    transform: scale(1.05);
+  }
+  
+  .image-title {
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #701628;
+  }
+  
+  .image-description {
+    font-size: 0.95em;
+    color: #444;
+    padding: 0 10px 15px;
+  }
+  
+.atitlan {
+    width: 100%;
+    height: 100vh;
+    background-image: url('rostromaya1.jpg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;      /* Centra verticalmente */
+    justify-content: flex-start; /* Coloca el contenido a la izquierda */
+    padding-left: 10%;        /* Margen desde el borde izquierdo */
+}
+.atitlan-content {
+  color: whitesmoke;
+  max-width: 600px;
+  text-align: left;
+}
+.atitlan-content h1 {
+  font-size: 7vmin;
+  margin-bottom: 20px;
+}
+
+.atitlan-content p {
+  font-size: 1.2em;
+  color: rgb(221, 221, 221);
+}
+
+
+.atitlan-content .ctn {
+  margin-top: 30px;
+  display: inline-block;
+  background-color: #fff;
+  color: #000;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.footer {
+  background-color: #222;
+  color: #ddd;
+  padding: 30px 20px;
+  text-align: center;
+  font-size: 0.9em;
+}
+.arcoantigua {
+     width: 100%;
+  height: 100vh;
+  background-image: url('ArcoSantaCatalina.jpeg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;      /* Centra verticalmente */
+  justify-content: flex-start; /* Coloca el contenido a la izquierda */
+  padding-left: 10%;        /* Margen desde el borde izquierdo */
+}
+
+.footer {
+    width: 100%;
+    background: linear-gradient(145deg, #3b2f2f, #1d1b1b);
+    color: #f5e9d2;
+    padding: 50px 20px 20px;
+    font-family: 'Segoe UI', sans-serif;
+    border-top: 5px solid #fca311;
+    box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.4);
+    margin: 0;
+  }
+  
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    max-width: 1100px;
+    margin: auto;
+    width: 100%;
+  }
+  
+  
+  .footer-logo h2 {
+    font-size: 28px;
+    color: #fca311;
+    margin-bottom: 10px;
+  }
+  
+  .footer-logo p {
+    font-size: 15px;
+    color: #f0e7da;
+  }
+  
+  .footer-links h3,
+  .footer-social h3 {
+    color: #fca311;
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links li {
+    margin-bottom: 8px;
+  }
+  
+  .footer-links a {
+    color: #f5e9d2;
+    text-decoration: none;
+    transition: all 0.3s;
+  }
+  
+  .footer-links a:hover {
+    color: #ffffff;
+    padding-left: 5px;
+  }
+  
+  .social-icons {
+    margin-top: 20px;
+  }
+  
+  .social-icons a {
+    color: #fca311;
+    margin: 0 15px;
+    font-size: 1.5em;
+    transition: color 0.3s, transform 0.3s;
+  }
+  
+  .social-icons a:hover {
+    color: #ffffff;
+    transform: scale(1.2);
+  }
+  
+  
+  .footer-bottom {
+    text-align: center;
+    border-top: 1px solid #5c4d4d;
+    padding-top: 20px;
+    font-size: 14px;
+    color: #b5a69e;
+    margin-top: 30px;
+  }
+  
+  .carousel-fade {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    margin: 40px auto;
+    overflow: hidden;
+  }
+  
+  .fade-slide {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    width: 100%;
+    height: auto;
+  }
+  
+  .fade-slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  }
+  
+  .fade-slide.active {
+    opacity: 1;
+    position: relative;
+  }
+  
+  
+  
+  

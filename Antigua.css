@@ -1,0 +1,182 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: century gothic;
+   
+}
+.header-antigua {
+    background-image: url('FuenteNoche.jpeg'); /* o cualquier imagen impactante de Antigua */
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+  }
+  
+  .header-antigua::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Oscurece la imagen para que el texto resalte */
+    z-index: 1;
+  }
+  
+  .header-antigua .header-content {
+    z-index: 2;
+    position: relative;
+    max-width: 800px;
+    padding: 20px;
+  }
+  
+  .header-antigua h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  
+  .header-antigua p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .ctn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #e67e22;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .ctn:hover {
+    background-color: #cf711f;
+  }
+  
+/* Para dar espacio entre el header y las imágenes */
+.image-links {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  .image-card {
+    width: 300px;
+    text-align: center; /* Centra todo el contenido de la tarjeta */
+  }
+  .image-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+  }
+  .image-card img:hover {
+    transform: scale(1.05);
+  }
+  .image-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  .image-description {
+    font-size: 1em;
+    margin-top: 5px;
+  }
+
+
+  .footer {
+    width: 100%;
+    background: linear-gradient(145deg, #3b2f2f, #1d1b1b);
+    color: #f5e9d2;
+    padding: 50px 20px 20px;
+    font-family: 'Segoe UI', sans-serif;
+    border-top: 5px solid #fca311;
+    box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.4);
+    margin: 0;
+  }
+  
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    max-width: 1100px;
+    margin: auto;
+    width: 100%;
+  }
+  
+  
+  .footer-logo h2 {
+    font-size: 28px;
+    color: #fca311;
+    margin-bottom: 10px;
+  }
+  
+  .footer-logo p {
+    font-size: 15px;
+    color: #f0e7da;
+  }
+  
+  .footer-links h3,
+  .footer-social h3 {
+    color: #fca311;
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links li {
+    margin-bottom: 8px;
+  }
+  
+  .footer-links a {
+    color: #f5e9d2;
+    text-decoration: none;
+    transition: all 0.3s;
+  }
+  
+  .footer-links a:hover {
+    color: #ffffff;
+    padding-left: 5px;
+  }
+  
+  .social-icons {
+    margin-top: 20px;
+  }
+  
+  .social-icons a {
+    color: #fca311;
+    margin: 0 15px;
+    font-size: 1.5em;
+    transition: color 0.3s, transform 0.3s;
+  }
+  
+  .social-icons a:hover {
+    color: #ffffff;
+    transform: scale(1.2);
+  }
+  
+  
+  .footer-bottom {
+    text-align: center;
+    border-top: 1px solid #5c4d4d;
+    padding-top: 20px;
+    font-size: 14px;
+    color: #b5a69e;
+    margin-top: 30px;
+  }
